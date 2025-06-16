@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Steffen Veltrup – Visitenkarte</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -22,14 +21,6 @@
       justify-content: center;
       align-items: flex-end;
       padding-bottom: 30px;
-    }
-    .profile-img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: #fff;
-      padding: 5px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
     }
     .container {
       text-align: center;
@@ -61,51 +52,12 @@
       margin: 10px 0;
       border-radius: 12px;
       font-size: 14px;
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
-    .card i {
-      color: #555;
-      width: 18px;
     }
     .card b {
       display: block;
       font-size: 12px;
       color: #888;
-    }
-    .section-title {
-      text-align: left;
-      font-weight: 600;
-      font-size: 14px;
-      margin: 24px 0 10px;
-    }
-    .link-card {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #f9f9f9;
-      padding: 14px 20px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-    .link-card .left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .link-card img {
-      width: 24px;
-      height: 24px;
-    }
-    .link-card .text {
-      display: flex;
-      flex-direction: column;
-    }
-    .link-card small {
-      color: #888;
-      font-size: 12px;
+      margin-bottom: 4px;
     }
     .download-btn {
       display: block;
@@ -122,11 +74,14 @@
       text-decoration: none;
       color: inherit;
     }
+    img.logo {
+      max-height: 80px;
+    }
   </style>
 </head>
 <body>
   <div class="top-gradient">
-    <img src="logo-no-background-white.png" alt="Logo" class="profile-img">
+    <img src="logo-no-background-white.png" alt="Logo" class="logo">
   </div>
 
   <div class="container">
@@ -138,48 +93,31 @@
     </div>
 
     <div class="card">
-      <i class="fas fa-mobile-alt"></i>
-      <div><b>Mobilnummer</b>+49 1523 7884232</div>
+      <b><i class="fas fa-mobile-alt"></i> Mobilnummer</b>
+      +49 1523 7884232
     </div>
 
     <div class="card">
-      <i class="fas fa-envelope"></i>
-      <div><b>E-Mail</b>fotoboxverleih.veltrup@web.de</div>
+      <b><i class="fas fa-envelope"></i> E-Mail</b>
+      fotoboxverleih.veltrup@web.de
     </div>
 
     <div class="card">
-      <i class="fas fa-globe"></i>
-      <div><b>Kleinanzeigen</b><a href="https://www.kleinanzeigen.de/s-anzeige/fotobox-verkleidung-alle-bilder-inklusive-hintergrund/2985775827-226-3030" target="_blank">www.kleinanzeigen.de</a></div>
+      <b><i class="fas fa-camera"></i> Beschreibung</b>
+      Fotografie & Fotoboxverleih Veltrup
     </div>
 
     <div class="card">
-      <i class="fas fa-camera-retro"></i>
-      <div><b>Beschreibung</b>Fotografie & Fotoboxverleih Veltrup</div>
+      <b><i class="fab fa-whatsapp"></i> WhatsApp</b>
+      <a href="https://wa.me/4915237884232" target="_blank">Kontaktieren Sie uns über WhatsApp</a>
     </div>
 
-    <div class="section-title">Finden Sie mich auf</div>
-
-    <a href="https://wa.me/4915237884232" target="_blank" class="link-card">
-      <div class="left">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        <div class="text">
-          <span>WhatsApp</span>
-          <small>Kontaktieren Sie uns über WhatsApp!</small>
-        </div>
-      </div>
-      <span>→</span>
-    </a>
-
-    <a href="https://www.kleinanzeigen.de/s-anzeige/fotobox-verkleidung-alle-bilder-inklusive-hintergrund/2985775827-226-3030" target="_blank" class="link-card">
-      <div class="left">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Globe_icon.svg" alt="Web">
-        <div class="text">
-          <span>Web</span>
-          <small>Fragen Sie die Fotobox für Ihr Event direkt über Kleinanzeigen an!</small>
-        </div>
-      </div>
-      <span>→</span>
-    </a>
+    <div class="card">
+      <b><i class="fas fa-globe"></i> Kleinanzeigen</b>
+      <a href="https://www.kleinanzeigen.de/s-anzeige/fotobox-verkleidung-alle-bilder-inklusive-hintergrund/2985775827-226-3030" target="_blank">
+        Anzeige auf Kleinanzeigen öffnen
+      </a>
+    </div>
 
     <a href="steffen-veltrup.vcf" download class="download-btn">Kontakt hinzufügen</a>
   </div>
